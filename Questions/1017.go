@@ -1,6 +1,7 @@
 package questions
 
 import (
+	"fmt"
 	"strconv"
 )
 
@@ -12,6 +13,8 @@ func BaseNeg2(n int) string {
 	for n != 0 {
 		r := n % -2
 		if r < 0 {
+			a := 1
+			fmt.Println(a)
 			r -= -2
 		}
 		n -= r
